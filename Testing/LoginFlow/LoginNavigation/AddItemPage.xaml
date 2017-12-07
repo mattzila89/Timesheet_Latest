@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.AddItemPage" Title="Add Item Page" BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Browse" Clicked="OnButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentView.Content>
+        <StackLayout VerticalOptions="Start" Padding="5" Spacing="10">
+            <Label></Label>
+            <Label></Label>
+            <DatePicker DateSelected="DatePicker_DateSelected" />  
+            <Label x:Name="MainLable" HorizontalOptions="Center" FontSize="30" TextColor="Black"></Label>
+            <Entry x:Name="CUser" Placeholder="Xamarin" PlaceholderColor="Gray" />
+            <Entry x:Name="eEntry" Placeholder="Data that is stored/returned" PlaceholderColor="Gray" />
+        </StackLayout>
+	</ContentView.Content>
+</ContentView>

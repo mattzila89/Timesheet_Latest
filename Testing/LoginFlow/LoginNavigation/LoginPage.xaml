@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.LoginPage" Title="Login" NavigationPage.HasNavigationBar="False" BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding="40" Spacing="10">
+            <Image Source="L0G0.png" VerticalOptions="Start" HeightRequest="195" />
+            <Label x:Name="messageLabel" TextColor="Red" />
+            <Entry x:Name="usernameEntry" Placeholder="Username" Text="Xamarin" TextColor="Black" PlaceholderColor="Gray"  />
+            <Entry x:Name="passwordEntry" IsPassword="true" Text="password" Placeholder="Password" TextColor="Black" PlaceholderColor="Gray" />
+            <Entry x:Name="idEntry" Placeholder="ID" Text="17" PlaceholderColor="Gray" TextColor="Black" />
+            <Button BackgroundColor="#007FFF" Text="Login" TextColor="White" Clicked="OnLoginButtonClicked" />
+            <Switch x:Name="MySwitch"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

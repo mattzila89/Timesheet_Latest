@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.GenItem" Title="Add Item Page" BackgroundColor="White">
+	<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Browse" Clicked="OnButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentView.Content>
+        <StackLayout VerticalOptions="Start" Padding="5" Spacing="10">
+            <Label></Label>
+            <Label></Label>
+            <DatePicker DateSelected="DatePicker_DateSelected" BackgroundColor="Silver"/>
+            <Picker x:Name="Cust" SelectedIndex="{Binding Industry}" TextColor="Gray" HorizontalOptions="FillAndExpand" Title="Customer"  >
+                <Picker.Items>
+                    <x:String>7100 : DPS</x:String>
+                    <x:String>2150 : Duncan Supply</x:String>
+                    <x:String>4061 : Merschman Seeds</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Job" SelectedIndex="{Binding Industry}" TextColor="Gray" HorizontalOptions="FillAndExpand" Title="Job" >
+                <Picker.Items>
+                    <x:String>010: Contractor's Use Only</x:String>
+                    <x:String>011: Communication/Lan/Network - SE</x:String>
+                    <x:String>012: iSeries/400 Issues - SE</x:String>
+                    <x:String>661: Documentation</x:String>
+                    <x:String>841: DPS Internal Programming</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Task" SelectedIndex="{Binding Industry}" TextColor="Gray" HorizontalOptions="FillAndExpand" Title="Task" >
+                <Picker.Items>
+                    <x:String>INTERNAL: DPS Internal Programming</x:String>
+                    <x:String>S36ENV: S/36 Environment Test For V6R1</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="Act" SelectedIndex="{Binding Industry}" TextColor="Gray" HorizontalOptions="FillAndExpand" Title="Activity" >
+                <Picker.Items>
+                    <x:String>7100 : DPS</x:String>
+                    <x:String>01: Design</x:String>
+                    <x:String>02: Programming</x:String>
+                    <x:String>03: Test/Debug</x:String>
+                    <x:String>04: General Support</x:String>
+                    <x:String>05: Maintenance Support</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="hours" Placeholder="Hours" MinimumHeightRequest="30" TextColor="Black" PlaceholderColor="Gray" />
+            <Entry x:Name="descr" Placeholder="Description" TextColor="Black" PlaceholderColor="Gray" />
+            <Button x:Name="SaveItems" Text="Save Item" BackgroundColor="#007FFF" TextColor="White" Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentPage>
