@@ -1,9 +1,7 @@
 LoginFlow
 =========
 
-This sample demonstrates how to manipulate the navigation stack in order to view the main page of the timesheet application once the user has successfully logged in to enter time.
-
-For more information about the sample see [Hierarchical Navigation](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/user-interface/navigation/hierarchical/).
+This project shows how to manipulate the navigation stack in order to view different pages of the timesheet application once the user has successfully logged in to enter time. Other page's that are included: add item's page  to the main page list, as well as a page that uses a RESTful API request to GET data.
 
 Author
 ------
